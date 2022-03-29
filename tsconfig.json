@@ -8,6 +8,12 @@
     "types": ["jest"],
     "strict": true,
     "skipLibCheck": true,
-    "declaration": true
-  }
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "dhooks": ["./src/hooks/index.ts"],
+    },
+  },
+  "exclude": ["node_modules"]
 }
